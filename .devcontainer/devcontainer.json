@@ -1,0 +1,37 @@
+{
+  "name": "Ansible Development Container",
+  "image": "x241c297f/ansible:latest",
+  "postCreateCommand": ".devcontainer/postCreate.sh",
+  "remoteUser": "x241c297f",
+  "containerUser": "x241c297f",
+  "runArgs": [
+    "--name=${localWorkspaceFolderBasename}",
+    "--add-host=docker-host.home.arpa:host-gateway"
+  ],
+  "mounts": [
+    {
+      "source": "${localEnv:HOME}${localEnv:USERPROFILE}/.ssh",
+      "target": "/home/x241c297f/.ssh",
+      "type": "bind"
+    },
+    {
+      "source": "${localEnv:HOME}${localEnv:USERPROFILE}/.ansible",
+      "target": "/home/x241c297f/.ansible",
+      "type": "bind"
+    }
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "eamodio.gitlens",
+        "redhat.ansible",
+        "streetsidesoftware.code-spell-checker",
+        "timonwong.shellcheck",
+        "yzhang.markdown-all-in-one",
+        "esbenp.prettier-vscode",
+        "foxundermoon.shell-format"
+      ]
+    }
+  }
+}

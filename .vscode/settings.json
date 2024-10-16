@@ -1,0 +1,73 @@
+{
+  "files.associations": {
+    "*.j2": "ansible-jinja",
+    "${workspaceFolder}/group_vars/**/*": "ansible",
+    "${workspaceFolder}/host_vars/**/*": "ansible",
+    "${workspaceFolder}/roles/**/*.yml": "ansible",
+    "${workspaceFolder}/playbooks/**/*.yml": "ansible",
+    "${workspaceFolder}/inventory": "properties",
+    "${workspaceFolder}/ansible.cfg": "properties",
+    "**/docker-compose.yml": "dockercompose"
+  },
+  "[ansible]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.printWidth": 160,
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[dockerfile]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker",
+    "editor.formatOnSave": true
+  },
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "ansible.validation.enabled": true,
+  "ansible.validation.lint.enabled": true,
+  "ansible.python.interpreterPath": "/usr/bin/python3.12",
+  "cSpell.customDictionaries": {
+    "project-words": {
+      "name": "project-dictionary",
+      "path": "${workspaceRoot}/.vscode/cSpell-custom-dictionary.txt",
+      "description": "Words used in this project",
+      "addWords": true
+    },
+    "custom": true // Enable the `custom` dictionary
+  },
+  "cSpell.enabled": true,
+  "cSpell.enableFiletypes": [
+    "ansible",
+    "ansible-jinja",
+    "dockerfile",
+    "dockercompose",
+    "properties"
+  ]
+}
