@@ -1,6 +1,7 @@
 {
   "name": "Ansible Development Container",
   "image": "x241c297f/ansible:latest",
+  "initializeCommand": ".devcontainer/initialize.sh",
   "postCreateCommand": ".devcontainer/postCreate.sh",
   "remoteUser": "x241c297f",
   "containerUser": "x241c297f",
@@ -17,6 +18,11 @@
     {
       "source": "${localEnv:HOME}${localEnv:USERPROFILE}/.ansible",
       "target": "/home/x241c297f/.ansible",
+      "type": "bind"
+    },
+    {
+      "source": "./.zsh_history",
+      "target": "/home/x241c297f/.zsh_history",
       "type": "bind"
     }
   ],
