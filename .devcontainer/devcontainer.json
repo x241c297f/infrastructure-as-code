@@ -5,6 +5,7 @@
   "postCreateCommand": ".devcontainer/postCreate.sh",
   "remoteUser": "x241c297f",
   "containerUser": "x241c297f",
+  "updateRemoteUserUID": false,
   "runArgs": [
     "--name=${localWorkspaceFolderBasename}",
     "--add-host=docker-host.home.arpa:host-gateway"
