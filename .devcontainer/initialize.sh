@@ -6,5 +6,4 @@
 # exit commands on pipe failures (-o pipefail)
 set -euxo pipefail
 
-mkdir -p ~/.ansible
 touch ./.zsh_history
