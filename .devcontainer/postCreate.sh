@@ -6,6 +6,9 @@
 # exit commands on pipe failures (-o pipefail)
 set -euxo pipefail
 
-# Install dependencies (see README.md)
+# Create SSH controlmasters directory
+mkdir -p /tmp/ssh-controlmasters
+
+# Install ansible dependencies
 ansible-galaxy collection install ansible.posix
 ansible-galaxy collection install community.general
