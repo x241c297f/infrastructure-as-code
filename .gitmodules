@@ -1,0 +1,3 @@
+[submodule "ansible-inventory"]
+	path = ansible-inventory
+	url = git@github.com:x241c297f/ansible-inventory.git
