@@ -17,8 +17,8 @@
       "type": "bind"
     },
     {
-      "source": "${localEnv:HOME}${localEnv:USERPROFILE}/.devcontainer/infrastructure-as-code/zsh-history/",
-      "target": "/home/x241c297f/devcontainer/zsh-history/",
+      "source": "${localEnv:HOME}${localEnv:USERPROFILE}/.devcontainer/infrastructure-as-code/",
+      "target": "/home/x241c297f/devcontainer/",
       "type": "bind"
     }
   ],

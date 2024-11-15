@@ -6,4 +6,4 @@
 # exit commands on pipe failures (-o pipefail)
 set -euxo pipefail
 
-mkdir -p "${HOME}"/.devcontainer/infrastructure-as-code/zsh-history/
+mkdir -p "${HOME}"/.devcontainer/infrastructure-as-code/
